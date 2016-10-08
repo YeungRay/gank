@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/zhihu/zhihu",
+    "pages/wechat/wechat",
+    "pages/gank/gank"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#dddddd",
+    "navigationBarTitleText": "知乎日报",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#30DB12",
+    "list": [
+      {
+        "pagePath": "pages/zhihu/zhihu",
+        "iconPath": "image/ic_zhihu_n.png",
+        "selectedIconPath": "image/ic_zhihu_p.png",
+        "text": "知乎"
+      },
+      {
+        "pagePath": "pages/wechat/wechat",
+        "iconPath": "image/ic_wexin_n.png",
+        "selectedIconPath": "image/ic_wexin_p.png",
+        "text": "微信"
+      },
+      {
+        "pagePath": "pages/gank/gank",
+        "iconPath": "image/ic_gank_n.png",
+        "selectedIconPath": "image/ic_gank_p.png",
+        "text": "干货"
+      }
+    ]
+  }
+}
