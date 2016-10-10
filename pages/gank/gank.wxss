@@ -1,0 +1,5 @@
+.swiper-tab{
+    height: 30px;
+    flex-direction: row;
+    display: flex;
+}
