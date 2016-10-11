@@ -4,8 +4,22 @@
     </loading>
 
     <view class="swiper-tab">
-        <view>Android</view>
-        <view>福利</view> 
+        <view class="swiper-tab-list {{currentTab==0?'on':''}}" data-current="0" bindtap="switchNav">Android</view>
+        <view class="swiper-tab-list {{currentTab==1?'on':''}}" data-current="1" bindtap="switchNav">福利</view> 
     </view>
+
+    <swiper bindchange="swiperChange">
+
+        <swiper-item>
+
+        <view>aaaaaaaaaaa</view>
+
+        </swiper-item>
+
+        <swiper-item>
+        <view>bbbbbbbbbbbbbbb</view>
+        </swiper-item>
+
+    </swiper>
 
 </view> 
