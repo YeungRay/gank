@@ -11,5 +11,14 @@
     margin: 0 20px;
     padding: 4px 0px;
 }
-.on{ border-bottom: 1px solid #30DB12; color: #30DB12; }
+.on{
+     border-bottom: 1px solid #30DB12;
+      color: #30DB12; 
+}
+.swiper-box{
+   
+}
+.hot-box{
+    display: block; height: 100%; 
+}
 

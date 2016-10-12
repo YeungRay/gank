@@ -8,16 +8,25 @@
         <view class="swiper-tab-list {{currentTab==1?'on':''}}" data-current="1" bindtap="switchNav">福利</view> 
     </view>
 
-    <swiper bindchange="swiperChange">
+    <swiper current="{{currentTab}}" bindchange="swiperChange" class="swiper-box" style="height:{{winHeight - 40}}px">
 
         <swiper-item>
 
-        <view>aaaaaaaaaaa</view>
+            <scroll-view class="hot-box" scroll-y="true">
+           
+        
+            </scroll-view>
+            
 
         </swiper-item>
 
         <swiper-item>
-        <view>bbbbbbbbbbbbbbb</view>
+
+            <scroll-view class="hot-box" scroll-y="true">
+           
+            
+            </scroll-view>
+      
         </swiper-item>
 
     </swiper>

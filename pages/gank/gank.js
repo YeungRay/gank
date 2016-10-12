@@ -1,5 +1,10 @@
 Page( {
   data: {
+    /**
+     * 页面配置
+     */
+    winWidth: 0,
+    winHeight: 0,
     tems: [],
     hidden: true,
     // tab切换
@@ -7,6 +12,15 @@ Page( {
   },
   onLoad: function( options ) {
     // 页面初始化 options为页面跳转所带来的参数
+    var that = this;
+    wx.getSystemInfo( {
+      success: function( res ) {
+        that.setData( {
+          winWidth: res.windowWidth,
+          winHeight: res.windowHeight
+        })
+      }
+    })
   },
   onReady: function() {
     // 页面渲染完成
@@ -30,10 +44,10 @@ Page( {
       })
     }
   },
-  swiperChange: function(e) {
+  swiperChange: function( e ) {
     var current = e.detail.current;
     this.setData( {
-        currentTab: current
-      })
+      currentTab: current
+    })
   }
 })
